@@ -51,5 +51,6 @@ pip install jupyter pandas numpy matplotlib seaborn scikit-learn
 В случае возникновения вопросов или предложений вы можете связаться со мной по следующим контактным данным:
 
 Email: dikarpova04@icloud.com
-GitHub: https://github.com/dianakarpova
+GitHub: https://github.com/dikarpova04
+
 
