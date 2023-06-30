@@ -14,19 +14,19 @@ def main():
 
 
 def page_style():
-    image = Image.open('avia_model.jpeg')
-    icon_image = Image.open('icon_avia.jpg')
-
-    st.set_page_config(
-        layout="wide",
-        initial_sidebar_state="auto",
-        page_title="avia_clients_model",
-        page_icon=icon_image,
-    )
+    # image = Image.open('avia_model.jpeg')
+    # icon_image = Image.open('icon_avia.jpg')
+    #
+    # st.set_page_config(
+    #     layout="wide",
+    #     initial_sidebar_state="auto",
+    #     page_title="avia_clients_model",
+    #     page_icon=icon_image,
+    # )
 
     st.title('_:blue[Предсказание удовлетворенности клиента авиакомпании полетом.]_')
 
-    st.image(image)
+    # st.image(image)
 
 
 def user_in():
