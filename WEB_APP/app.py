@@ -87,10 +87,10 @@ def prediction_user(user_input):
 
     if prediction == 0:
         prob_percent = prediction_proba[0][0] * 100
-        st.write(f'Клиент будет неудовлетворен полетом c вероятностью: {round(prob_percent)}%')
+        st.subheader(f'Клиент будет неудовлетворен полетом c вероятностью: {round(prob_percent)}%')
     else:
         prob_percent = prediction_proba[0][1] * 100
-        st.write(f'Клиент будет удовлетворен полетом c вероятностью: {round(prob_percent)}%')
+        st.subheader(f'Клиент будет удовлетворен полетом c вероятностью: {round(prob_percent)}%')
 
 
 def importsnce_plot():
@@ -100,16 +100,17 @@ def importsnce_plot():
     importance = model.feature_importances_
     importance = np.delete(importance, np.where(importance < 0.0005))
 
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(8, 5), dpi=80)
     ax.bar(range(len(importance)), importance * 100)
     ax.set_xticks(range(len(importance)))
     ax.set_xticklabels(['Тип клиента_Нелояльный', 'Тип поездки_Частная поездка',
        'Класс_Эконом', 'Класс_Эконом-плюс',
        'Задержка отправления в минутах', 'Задержка прибытия в минутах',
-       'WiFi сервис', 'Онлайн-регистрация'], rotation='vertical')
+       'WiFi сервис', 'Онлайн-регистрация'], rotation='vertical', fontsize=8)
     ax.set_ylabel('Важность признака в процентах')
-    ax.set_title('График важности признаков')
+    ax.set_title('График важности признаков', fontsize=12)
     st.pyplot(fig)
+
 
 
 if __name__ == '__main__':
