@@ -14,7 +14,7 @@ This project contains a Jupyter Notebook with Exploratory Data Analysis (EDA) fo
 The file containing customer data used in this project can be found at the following link: https://raw.githubusercontent.com/evgpat/edu_stepik_from_idea_to_mvp/main/datasets/clients.csv
 
 <h3>Results</h3>
-You can run this application by following this link: https://avia-clients-model.streamlit.app/
+You can run this application by following this link: https://mlaviaclients.streamlit.app/
 
 <h3>Contact me</h3>
 If you have any questions or suggestions, do not hesitate to contact me at:
